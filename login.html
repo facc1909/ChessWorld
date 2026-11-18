@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entrar</title>
+    <link rel="icon" href="img/chessworldlogo.png" type="image/png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/bootstrap/bootstraplogin.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body class="corpologin">
+    <button class="botaovoltar" onclick="history.back()" aria-label="Voltar">
+        <i class="fa-solid fa-arrow-left"></i>
+    </button>
+
+    <div class="container pb-3">
+
+        <img class="logologin img-fluid" src="img/chessworldlogo.png" alt="Logo do Chess World.">
+
+        <h1 class="bemvindo">Bem vindo de volta!</h1>
+
+        <div class="row justify-content-center align-items-center g-4 mt-3">
+
+            <div class="col-12 col-md-8 col-lg-5">
+                <section>
+                    <article>
+                        <form action="principal.html" method="get">
+                            <input type="text" id="nickname" name="nickname" placeholder="Nome de usuário" required>
+                            <input type="email" id="e-mail" name="email" placeholder="E-mail" required>
+
+                            <div class="senha-wrapper">
+                                <input type="password" id="senha" name="senha" placeholder="Senha" required>
+                                <i class="fa-solid fa-eye toggle-senha" data-target="senha"></i>
+                            </div>
+
+                            <button class="entrarpag" type="submit">Entrar</button>
+                        </form>
+                    </article>
+                </section>
+            </div>
+
+            <div class="col-lg-6 d-none d-lg-block text-center">
+                <img src="img/lollipopjewel_pindown.io_1788674350.gif" class="giflogin img-fluid" alt="" loading="lazy">
+            </div>
+
+        </div>
+
+        <p class="direitos">© 2026 Chess World. Todos os direitos reservados.</p>
+
+    </div>
+
+    <script>
+        document.querySelectorAll('.toggle-senha').forEach(icone => {
+            icone.addEventListener('click', () => {
+                const inputId = icone.getAttribute('data-target');
+                const input = document.getElementById(inputId);
+
+                if (input.getAttribute('type') === 'password') {
+                    input.setAttribute('type', 'text');
+                    icone.classList.remove('fa-eye');
+                    icone.classList.add('fa-eye-slash');
+                } else {
+                    input.setAttribute('type', 'password');
+                    icone.classList.remove('fa-eye-slash');
+                    icone.classList.add('fa-eye');
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

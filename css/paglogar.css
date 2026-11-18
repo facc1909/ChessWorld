@@ -1,0 +1,38 @@
+:root {
+    --verdeescurO: #2a5202;
+    --verdeclaro: #befa82;
+}
+
+/*BOTOES*/
+
+.botaocriarconta,
+.botaoentrar {
+    flex: 1 1 0;
+    height: 2.5rem;
+    border: none;
+    border-radius: 15px;
+    font-family: 'Fonte';
+    transition: color 0.5s ease;
+}
+
+.botaocriarconta {
+    background: linear-gradient(120deg, var(--verdeescurO), var(--verde));
+    font-size: 0.938rem;
+    color: var(--branco);
+}
+
+.botaocriarconta:hover {
+    background: linear-gradient(120deg, var(--branco), var(--verdeclaro));
+    color: var(--verde);
+}
+
+.botaoentrar {
+    background: linear-gradient(120deg, var(--branco), var(--verdeclaro));
+    font-size: 1.25rem;
+    color: var(--verde);
+}
+
+.botaoentrar:hover {
+    background: linear-gradient(120deg, var(--verdeescurO), var(--verdeclaro));
+    color: var(--branco);
+}

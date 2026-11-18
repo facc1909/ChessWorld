@@ -1,0 +1,57 @@
+@media (max-width: 991.98px) {
+
+    /*CAIXA: foto em cima, texto embaixo*/
+    .caixa {
+        flex-direction: column;
+        margin: 1.5rem 0.75rem;
+    }
+
+    .jogador {
+        width: 100%;
+        max-height: 28rem;
+        object-position: top;
+    }
+
+    .conteudocaixa {
+        padding: 1rem 1.25rem 1.5rem;
+    }
+
+    .conteudocaixa p {
+        font-size: clamp(1rem, 2.2vw, 1.4375rem);
+    }
+
+    /*RANKING*/
+    .ranking,
+    .ranking1 {
+        font-size: clamp(1.1rem, 3vw, 1.5rem);
+    }
+
+    /*PARÁGRAFOS ESPECÍFICOS*/
+    p.textobaixo,
+    p.textobaixo2 {
+        padding-left: 0;
+    }
+}
+
+@media (max-width: 767.98px) {
+
+    /*TÍTULO E BANDEIRA*/
+    main h1.tituloprincipal {
+        margin-left: 0;
+        padding: 1.5rem 1rem;
+    }
+
+    .nomeebandeira {
+        flex-wrap: wrap;
+        padding: 0 1rem;
+    }
+
+    main .nomeebandeira .tituloitem {
+        margin: 0;
+        padding: 1rem 0;
+    }
+
+    .bandeiratitulo {
+        margin: 0 0 0 0.75rem;
+    }
+}

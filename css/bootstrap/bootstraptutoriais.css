@@ -1,0 +1,57 @@
+@media (max-width: 767.98px) {
+
+    /*TITULOS*/
+    main h1.tituloprincipal,
+    main .tituloitem {
+        margin-left: 0;
+        padding: 1.5rem 1rem;
+    }
+
+    main .tituloitem2 {
+        font-size: 1.4rem;
+        margin-top: 1.5rem;
+        padding-left: 1rem;
+    }
+
+    main p {
+        padding: 0 1rem;
+        font-size: 1.1rem;
+    }
+
+    /*CAIXA DO VIDEO*/
+    .caixa {
+        flex-direction: column;
+        margin: 0 0.75rem 1.5rem 0.75rem;
+    }
+
+    .caixa iframe {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 16 / 9;
+    }
+
+    .conteudocaixa {
+        padding: 1rem 1.25rem;
+    }
+
+    .conteudocaixa p {
+        padding: 0;
+    }
+
+    /*CAIXA DE GAMBITO*/
+    .caixagambito {
+        margin: 1rem 0.75rem;
+        padding: 1rem;
+    }
+
+    .caixagambito p:not(.lance) {
+        padding: 0;
+    }
+
+    .lance {
+        max-width: 100%;
+        white-space: normal;
+        overflow-wrap: anywhere;
+        letter-spacing: normal;
+    }
+}

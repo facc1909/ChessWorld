@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roger Eilish</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/easteregg.css">
+    <link rel="stylesheet" href="../css/bootstrap/bootstrapeasteregg.css">
+</head>
+
+<body>
+    <main>
+        <h1 class="tituloprincipal">PARABÉNS!</h1>
+
+        <p>Você chegou ao final da lista e encontrou o Roger Eilish.
+            EBA!</p>
+
+        <img class="roger img-fluid" src="fotoseasteregg/roger.webp" alt="Roger Eilish">
+
+        <p>Seja honesto, você encontrou todos os Rogers? Há 7 deles
+            espalhados pelo meu site.</p>
+
+        <div class="grupobotoes">
+            <button class="botaoencontrei" onclick="confirmar()">Sim</button>
+            <button class="botaonaoencontrei" onclick="naoconfirma()">Não</button>
+        </div>
+    </main>
+
+    <script>
+        function confirmar() {
+            if (confirm("Mesmo?")) {
+                if (confirm("Tem certeza?")) {
+                    window.location.href = "rogerpark.html"
+                }
+            }
+        }
+
+        function naoconfirma() {
+            if (confirm("Vai encontrar então!")) {
+                window.location.href = "../principal.html"
+            }
+        }
+    </script>
+</body>
+
+</html>

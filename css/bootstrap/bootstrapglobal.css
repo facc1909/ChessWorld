@@ -1,0 +1,127 @@
+:root {
+    --verde: #81b64c;
+    --fundobackground: #262421;
+    --fundoheader: #161514;
+    --branco: #fff;
+    --borda: #444;
+    --fundo-caixa: #1a1717;
+}
+
+/*NAVBAR*/
+
+@media (max-width: 991.98px) {
+    #menuPrincipal {
+        --bs-offcanvas-bg: var(--fundobackground);
+        --bs-offcanvas-color: var(--branco);
+    }
+
+    #menuPrincipal .btn-close {
+        filter: invert(1);
+    }
+}
+
+.pesquisa {
+    background-color: var(--fundo-caixa);
+    color: var(--branco);
+    border-color: var(--branco);
+}
+
+.pesquisa::placeholder {
+    color: var(--branco);
+}
+
+.pesquisa:focus {
+    background-color: var(--fundo-caixa);
+    color: var(--branco);
+    border-color: var(--verde);
+    box-shadow: 0 0 0 0.2rem rgba(124, 179, 66, 0.25);
+}
+
+/*NAV*/
+
+@media (min-width: 992px) {
+    #menuPrincipal {
+        display: flex;
+        flex-direction: column;
+        min-width: 0;
+    }
+
+    #menuPrincipal .offcanvas-body {
+        flex-grow: 1;
+        padding: 0 1.5rem 0 1rem;
+    }
+
+    input.pesquisa {
+        --recuo: clamp(0rem, 3vw, 3rem);
+        margin-top: 1.875rem;
+        margin-left: var(--recuo);
+        width: calc(100% - var(--recuo));
+        max-width: none;
+        height: 3rem;
+        border-radius: 1.2rem;
+    }
+
+    .navbar-nav {
+        flex-wrap: wrap;
+    }
+}
+
+.navbar {
+    min-height: 12.5rem;
+    padding: 0;
+}
+
+.navbar-nav {
+    --bs-nav-link-color: var(--verde);
+    --bs-nav-link-hover-color: var(--branco);
+    --bs-navbar-active-color: var(--branco);
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-nav .nav-link {
+    font-size: 1.375rem;
+    font-weight: 600;
+    white-space: nowrap;
+    padding: 0 0 0.5rem 0;
+}
+
+.navbar-nav .nav-link:hover {
+    transform: translateY(-3px);
+    text-shadow: 0 0 10px var(--verde);
+}
+
+.navbar>.container-fluid {
+    align-items: stretch;
+    min-height: 12.5rem;
+}
+
+/*LINHA DE PESQUISA E BOTOES (so nas pag de logar)*/
+
+@media (min-width: 992px) {
+    .barrasuperior {
+        margin-top: 1.875rem;
+    }
+
+    .barrasuperior input.pesquisa {
+        flex: 1 1 auto;
+        width: auto;
+        min-width: 0;
+        margin: 0 0 0 clamp(0rem, 3vw, 3rem);
+    }
+
+    .barrasuperior>.d-flex {
+        margin-left: auto;
+        flex-shrink: 0;
+    }
+
+    .botaocriarconta,
+    .botaoentrar {
+        flex: 0 0 9.5rem;
+    }
+
+    .offcanvas-body > input.pesquisa {
+        width: calc(100% - var(--recuo) - 20.5rem);
+    }
+}

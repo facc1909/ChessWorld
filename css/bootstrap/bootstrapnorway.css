@@ -1,0 +1,78 @@
+.secaonorway {
+    margin: 0;
+    max-width: none;
+}
+
+.noticianorway {
+    float: none;
+    width: 100%;
+    max-width: none;
+    margin-right: 0;
+}
+
+aside {
+    float: none;
+    max-width: none;
+    margin: 0;
+}
+
+/*TEXTOS*/
+
+.noticianorway p,
+.textonorway p {
+    font-size: clamp(1rem, 1.6vw, 1.4375rem);
+}
+
+/*TABELA*/
+
+.tabelaopen {
+    min-width: 34rem;
+}
+
+/*TABELAS*/
+
+@media (max-width: 1199.98px) {
+    .tabela-wrapper {
+        overflow-x: auto;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .tabela-wrapper {
+        margin-left: 0.75rem;
+        margin-right: 0.75rem;
+    }
+
+    .tabela1 {
+        min-width: 52rem;
+    }
+
+    .textonorway p {
+        margin-left: 0;
+        padding: 1.5rem 1.25rem;
+    }
+}
+
+@media (max-width: 767.98px) {
+
+    /*TÍTULOS*/
+    main h1.tituloprincipal,
+    main .tituloitem {
+        margin-left: 0;
+        padding: 1.5rem 1rem;
+    }
+
+    .tabela1 th,
+    .tabela1 td {
+        padding: 0.75rem 0.5rem;
+        font-size: 1rem;
+    }
+
+    .noticianorway {
+        padding: 1rem;
+    }
+
+    aside {
+        padding: 1rem;
+    }
+}

@@ -1,0 +1,89 @@
+/*ROOT*/
+
+:root {
+    --verde: #81b64c;
+    --fundobackground: #262421;
+    --fundoheader: #161514;
+    --branco: #fff;
+    --borda: #444;
+    --fundo-caixa: #1a1717;
+}
+
+
+/*CAIXA*/
+
+.caixa {
+    display: flex;
+    align-items: stretch;
+    background-color: var(--fundo-caixa);
+    border: 4px solid var(--borda);
+    border-radius: 20px;
+    overflow: hidden;
+    margin-bottom: 1.875rem;
+    margin-left: 1.25rem;
+    margin-right: 1.25rem;
+}
+
+/*VIDEO*/
+
+iframe {
+    width: 25rem;
+    height: auto;
+    flex-shrink: 0;
+    border: none;
+}
+
+/*TEXTO CAIXA*/
+
+.conteudocaixa {
+    padding: 1.25rem 1.875rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.tituloitem2 {
+    color: var(--verde);
+    font-size: 1.8125rem;
+    margin-top: 2.5rem;
+    margin-bottom: 0.625rem;
+    padding-left: 2.5rem;
+}
+
+p {
+    padding-left: 2.5rem;
+}
+
+/*CAIXA GAMBITO*/
+
+.caixagambito {
+    background-color: var(--fundo-caixa);
+    border: 3px solid var(--borda);
+    border-bottom: 8px solid var(--borda);
+    border-radius: 15px;
+    padding: 1.25rem 1.563rem;
+    margin: 1.25rem auto;
+    margin-left: 1.25rem;
+    margin-right: 1.25rem;
+}
+
+.nomegambito {
+    color: var(--branco);
+    font-size: 1.1875rem;
+    margin: 0 0 0.625rem 0;
+}
+
+/*NOTACAO DOS LANCES*/
+
+.lance {
+    display: inline-block;
+    background-color: var(--fundoheader);
+    border: 1px solid var(--borda);
+    border-radius: 8px;
+    padding: 0.5rem 0.875rem;
+    font-family: monospace;
+    font-size: 0.9375rem;
+    color: var(--verde);
+    margin-bottom: 0.75rem;
+    letter-spacing: 0.063rem;
+}

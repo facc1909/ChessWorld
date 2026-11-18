@@ -1,0 +1,40 @@
+@media (max-width: 991.98px) {
+
+    /*TEXTOS*/
+    main p {
+        margin-left: 1.25rem;
+        margin-right: 1.25rem;
+        font-size: clamp(1rem, 2.4vw, 1.4375rem);
+    }
+
+    /*TABELAS: rolam na lateral em vez de serem cortadas*/
+    .tabelawrapper {
+        margin: 1rem 0.75rem 2rem 0.75rem;
+        overflow-x: auto;
+    }
+
+    .tabela1 {
+        min-width: 40rem;
+    }
+}
+
+@media (max-width: 767.98px) {
+
+    /*TÍTULOS*/
+    main h1.tituloprincipal,
+    main .tituloitem {
+        margin-left: 0;
+        padding: 1.5rem 1rem;
+    }
+
+    /*LOGOS DA TABELA*/
+    .logo {
+        width: 5rem;
+        height: 5rem;
+    }
+
+    .tabela1 th,
+    .tabela1 td {
+        padding: 0.5rem;
+    }
+}

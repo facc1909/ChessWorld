@@ -1,0 +1,112 @@
+/*NAVBAR*/
+.navbar-nav {
+    gap: 0;
+}
+
+.navbar-nav li {
+    margin-left: 0;
+}
+footer p {
+    padding-left: 0;
+}
+
+@media (max-width: 991.98px) {
+
+    .caixaintro {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .conteudointro {
+        flex: none;
+        width: 100%;
+        padding-left: 0;
+    }
+
+    /*CAIXA COM IMAGEM*/
+    .caixahistoria {
+        flex-direction: column;
+        margin: 1.5rem 0.75rem;
+    }
+
+    .imghistoria {
+        width: 100%;
+        max-height: 24rem;
+        object-position: top;
+    }
+
+    .conteudohistoria {
+        padding: 1rem 1.25rem 1.5rem;
+    }
+
+    /*CAIXAS DAS PEÇAS E JOGADAS*/
+    .caixapeca,
+    .caixajogada {
+        margin: 1.5rem 0.75rem;
+        padding: 1.25rem 1.25rem;
+    }
+}
+
+@media (max-width: 767.98px) {
+
+    /*TITULOS*/
+    main .tituloitem {
+        margin-left: 0;
+        padding: 1.5rem 1rem;
+    }
+
+    main .tituloitem2 {
+        font-size: 1.25rem;
+        margin-top: 1.5rem;
+        padding: 0 1rem;
+    }
+
+    .nomepeca {
+        font-size: 1.3rem;
+    }
+
+    /*PARAGRAFOS*/
+    main p {
+        padding-left: 1rem;
+        padding-right: 1rem;
+        font-size: clamp(1rem, 2.4vw, 1.4375rem);
+    }
+
+    .conteudohistoria p,
+    .caixapeca p,
+    .caixajogada p {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    /*IMAGEM DA CAPA*/
+    .imgcapa {
+        width: calc(100% - 2rem);
+    }
+
+    /*LISTA*/
+    main > ul {
+        padding-left: 1rem;
+    }
+
+    main > ul li {
+        margin-left: 1rem;
+    }
+
+    .caixajogada ul {
+        padding-left: 1.25rem;
+    }
+
+    .caixajogada li {
+        margin-left: 0;
+    }
+
+    .statspeca {
+        flex-wrap: wrap;
+        gap: 0.5rem;
+    }
+
+    .statspeca li {
+        margin-left: 0;
+    }
+}

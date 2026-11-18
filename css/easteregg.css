@@ -1,0 +1,62 @@
+/*ROOT*/
+:root {
+    --verde: #81b64c;
+    --fundobackground: #262421;
+    --fundoheader: #161514;
+    --branco: #fff;
+    --borda: #444;
+}
+
+/*TEXTO*/
+
+p {
+    margin-left:80px;
+}
+
+.roger {
+    margin: 50px 80px 50px 80px;
+    border: 7px solid var(--borda);
+    border-bottom: 12px solid var(--borda);
+    border-radius: 50px;
+    transition: color 1s ease
+}
+
+.roger:hover{
+    border-color:var(--verde)
+}
+
+.botaoencontrei {
+    height: 70px;
+    width: 100px;
+    background-color: var(--verde);
+    font-family: 'Fonte';
+    font-size: 25px;
+    color: var(--branco);
+    border: 3px solid var(--borda);
+    border-radius: 15px;
+    margin-left: 380px;
+    transition: color 0.6s ease;
+}
+
+.botaoencontrei:hover{
+    color: var(--verde);
+    background-color: var(--branco);
+}
+
+.botaonaoencontrei {
+    height: 70px;
+    width: 100px;
+    background-color: var(--branco);
+    font-family: 'Fonte';
+    font-size: 25px;
+    color: var(--verde);
+    border: 3px solid var(--borda);
+    border-radius: 15px;
+    margin-left: 20px;
+    transition: color 0.6s ease;
+}
+
+.botaonaoencontrei:hover {
+    color: var(--branco);
+    background-color: var(--verde);
+}

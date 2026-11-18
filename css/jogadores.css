@@ -1,0 +1,83 @@
+/*ROOT*/
+
+:root {
+    --verde: #81b64c;
+    --fundobackground: #262421;
+    --fundoheader: #161514;
+    --branco: #fff;
+    --borda: #444;
+    --fundo-caixa: #1a1717;
+}
+
+/*TÍTULO E BANDEIRA DO JOGADOR*/
+
+.tituloitem {
+    margin-bottom: -1.25rem;
+}
+
+.nomeebandeira {
+    display: flex;
+    align-items: center;
+    clear: left;
+}
+
+.bandeiratitulo {
+    width: 2.4375rem;
+    height: 2rem;
+    object-fit: cover;
+    border-radius: 2px;
+    vertical-align: middle;
+    margin-left: 3px;
+    margin-bottom: -2.5rem;
+    margin-left: -1.25rem;
+}
+
+/*CAIXA DO JOGADOR*/
+
+.caixa {
+    display: flex;
+    align-items: stretch;
+    background-color: var(--fundo-caixa);
+    border: 4px solid var(--borda);
+    border-radius: 20px;
+    overflow: hidden;
+    margin: 1.875rem;
+}
+
+/*FOTO JOGADOR*/
+
+.jogador {
+    width: 21.875rem;
+    height: auto;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+/*TEXTO DA CAIXA*/
+
+.conteudocaixa {
+    padding: 1.25rem 1.875rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/*RANKING*/
+
+.ranking,
+.ranking1 {
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 0 0 1.25rem 0;
+    padding-bottom: 0.625rem;
+    border-bottom: 0.125rem solid var(--borda);
+}
+
+/*AJUSTE DE PARÁGRAFOS ESPECÍFICOS*/
+
+p.textobaixo,
+p.textobaixo2 {
+    padding-left: 0;
+}

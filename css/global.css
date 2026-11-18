@@ -1,0 +1,192 @@
+/*FONTE*/
+@font-face {
+    font-family: 'Fonte';
+    src: url(../fonts/Aldrich-Regular.ttf);
+}
+
+/*ROOT*/
+:root {
+    --verde: #81b64c;
+    --fundobackground: #262421;
+    --fundoheader: #161514;
+    --branco: #fff;
+    --borda: #444;
+    --fundopesquisa: #3a3a3a;
+    --verdeclaro: #89ff22;
+}
+
+/*FONTE NO BODY*/
+body {
+    font-family: 'Fonte';
+    font-size: 18px;
+    color: var(--branco);
+
+}
+
+/*BACKGROUND DO BODY*/
+body {
+    background-color: var(--fundobackground);
+}
+
+/*BACKGROUND DO HEADER*/
+header {
+    background-color: var(--fundoheader);
+    border-radius: 1.5rem;
+    min-height: 12.5rem;
+}
+
+/*FOOTER*/
+footer {
+    background-color: var(--fundoheader);
+    border-radius: 25px;
+}
+
+.linksfooter {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    gap: 10px 40px;
+    justify-content: center;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.linkfooter {
+    font-size: 20px;
+    color: var(--verde);
+    transition: color 0.2s ease;
+}
+
+.linkfooter:hover {
+    color: var(--branco);
+}
+
+/*LINKS*/
+a {
+    color: var(--verde);
+    text-decoration: none;
+    transition: color 0.2s ease, color 0.2s ease;
+}
+
+a:hover {
+    color: var(--branco);
+    text-decoration: none;
+    transform: translateY(-3px);
+    text-shadow: 0 0 10px var(--verde)
+}
+
+/*LOGO HEADER*/
+
+.chessworldlogo {
+    width: 10rem;
+    height: auto;
+    padding: 0;
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+    padding: 1rem;
+    margin-right: 0;
+}
+
+
+
+/*BARRA DE PESQUISA*/
+input.pesquisa {
+    margin: 0;
+    width: 100%;
+    max-width: 62.5rem;
+    height: 2.5rem;
+    border: 0.125rem solid transparent;
+    border-radius: 0.75rem;
+    background-color: var(--fundopesquisa);
+    font-family: 'Fonte';
+    font-size: 1.125rem;
+    color: var(--branco);
+}
+
+/* TIRA OUTLINE DA BARRA*/
+input.pesquisa:focus {
+    outline: none;
+}
+
+/*DEIXA A BORDA VERDE QUANDO PASSA O CURSOR*/
+input.pesquisa:hover {
+    border-color: var(--verde);
+}
+
+input.pesquisa:focus {
+    outline: none;
+    color: var(--branco);
+    box-shadow: none;
+    background-color: var(--fundopesquisa);
+}
+
+input.pesquisa::placeholder {
+    color: var(--verdeclaro);
+    opacity: 0.7;
+}
+
+/*MUDA A COR DO X*/
+input.pesquisa::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+    appearance: none;
+    height: 14px;
+    width: 14px;
+    cursor: pointer;
+    background-color: var(--verde);
+    -webkit-mask-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>');
+    mask-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>');
+    mask-size: cover;
+    margin-right: 8px;
+}
+
+/*TÍTULOS*/
+
+h1.tituloprincipal {
+    margin-left: 30px;
+    font-size: 2.2rem;
+    padding: 40px;
+}
+
+.tituloitem {
+    font-size: 1.6rem;
+    margin-left: 30px;
+    padding: 40px;
+}
+
+.titulofooter {
+    font-size: 40px;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.itemfooter {
+    font-size: 20px;
+    text-align: center;
+
+}
+
+.direitos {
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+p {
+    font-size: 23px;
+}
+
+
+.easteregg {
+    text-decoration: none;
+    color: var(--verde);
+    white-space: nowrap;
+    transition: color 0.2s ease;
+}
+
+.easteregg:hover {
+    text-decoration: underline;
+    color: var(--branco);
+}
